@@ -127,11 +127,12 @@ section { padding: 72px 0; scroll-margin-top: 70px; }
 .feature p { margin-top: 8px; font-size: 15px; }
 
 /* gallery */
-.gallery { display: flex; gap: 22px; overflow-x: auto; padding: 10px 24px 30px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+.gallery { display: flex; justify-content: safe center; gap: 22px; overflow-x: auto; padding: 10px 24px 30px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
 .gallery figure { margin: 0; flex: 0 0 220px; scroll-snap-align: center; }
 .gallery .phone { max-width: 220px; border-radius: 36px; padding: 8px; box-shadow: 0 18px 40px rgba(20,20,15,0.18); }
 .gallery .phone > img { border-radius: 29px; }
 .gallery .phone::before { top: 15px; height: 18px; }
+.gallery-label { margin: 18px auto 0; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
 .gallery figcaption { text-align: center; margin-top: 14px; font-size: 14px; color: var(--muted); }
 
 /* privacy */
@@ -300,17 +301,21 @@ footer p + p { margin-top: 6px; }
       <p class="eyebrow">Screens</p>
       <h2>A look inside.</h2>
     </div>
+    <h3 class="gallery-label wrap">Light</h3>
     <div class="gallery">
-      <figure><div class="phone"><img src="docs/screenshots/schedule.png" alt="Schedule with today's sessions and a Start session button" loading="lazy"></div><figcaption>Schedule</figcaption></figure>
-      <figure><div class="phone"><img src="docs/screenshots/session-recording.png" alt="Recording with a live transcript" loading="lazy"></div><figcaption>Recording</figcaption></figure>
-      <figure><div class="phone"><img src="docs/screenshots/session-ready-dark.png" alt="Session ready to start, dark mode" loading="lazy"></div><figcaption>Session (dark)</figcaption></figure>
-      <figure><div class="phone"><img src="docs/screenshots/client.png" alt="Client page with description and goals" loading="lazy"></div><figcaption>Client</figcaption></figure>
-      <figure><div class="phone"><img src="docs/screenshots/clients.png" alt="Client list with an Unassigned row" loading="lazy"></div><figcaption>Clients</figcaption></figure>
-      <figure><div class="phone"><img src="docs/screenshots/prompts-hub-dark.png" alt="Prompt engine with note templates and global rules" loading="lazy"></div><figcaption>Prompt engine</figcaption></figure>
-      <figure><div class="phone"><img src="docs/screenshots/prompt-editor-dark.png" alt="Editing the SOAP note prompt" loading="lazy"></div><figcaption>Template editor</figcaption></figure>
-      <figure><div class="phone"><img src="docs/screenshots/appointment.png" alt="New appointment form" loading="lazy"></div><figcaption>Appointment</figcaption></figure>
-      <figure><div class="phone"><img src="docs/screenshots/settings.png" alt="Settings with theme switch" loading="lazy"></div><figcaption>Settings</figcaption></figure>
-      <figure><div class="phone"><img src="docs/screenshots/clients-dark.png" alt="Client list, dark mode" loading="lazy"></div><figcaption>Clients (dark)</figcaption></figure>
+      <figure><div class="phone"><img src="docs/screenshots/light-schedule.webp" alt="Schedule with today's sessions" loading="lazy"></div><figcaption>Schedule</figcaption></figure>
+      <figure><div class="phone"><img src="docs/screenshots/light-recording.webp" alt="Recording with a live transcript" loading="lazy"></div><figcaption>Recording</figcaption></figure>
+      <figure><div class="phone"><img src="docs/screenshots/light-client.webp" alt="Client page listing past session notes" loading="lazy"></div><figcaption>Client sessions</figcaption></figure>
+      <figure><div class="phone"><img src="docs/screenshots/light-about.webp" alt="Client description and goals" loading="lazy"></div><figcaption>Client details</figcaption></figure>
+      <figure><div class="phone"><img src="docs/screenshots/light-settings.webp" alt="Settings showing everything stays on this iPhone" loading="lazy"></div><figcaption>Settings</figcaption></figure>
+    </div>
+    <h3 class="gallery-label wrap">Dark</h3>
+    <div class="gallery">
+      <figure><div class="phone"><img src="docs/screenshots/dark-schedule.webp" alt="Schedule with today's sessions, dark mode" loading="lazy"></div><figcaption>Schedule</figcaption></figure>
+      <figure><div class="phone"><img src="docs/screenshots/dark-recording.webp" alt="Recording with a live transcript, dark mode" loading="lazy"></div><figcaption>Recording</figcaption></figure>
+      <figure><div class="phone"><img src="docs/screenshots/dark-clients.webp" alt="Client list, dark mode" loading="lazy"></div><figcaption>Clients</figcaption></figure>
+      <figure><div class="phone"><img src="docs/screenshots/dark-template.webp" alt="Editing the SOAP note template, dark mode" loading="lazy"></div><figcaption>Note template</figcaption></figure>
+      <figure><div class="phone"><img src="docs/screenshots/dark-settings.webp" alt="Settings, dark mode" loading="lazy"></div><figcaption>Settings</figcaption></figure>
     </div>
   </section>
 
