@@ -20,9 +20,9 @@
 ## See it in action
 
 <p align="center">
-  <video src="docs/screenshots/short_intro.mp4" width="320" controls muted playsinline poster="docs/screenshots/schedule.png"></video>
+  <a href="docs/screenshots/preview.mp4"><img src="docs/screenshots/light-recording.webp" width="260" alt="Recording a session; tap to watch the 30-second preview" /></a>
 </p>
-<p align="center"><a href="docs/screenshots/short_intro.mp4">Watch the short intro (MP4)</a></p>
+<p align="center"><a href="docs/screenshots/preview.mp4">Watch the 30-second preview (MP4)</a></p>
 
 ## Powered by Liquid AI
 
@@ -45,9 +45,9 @@ The model is downloaded once from Hugging Face ([LiquidAI/LFM3-Omni-2B-GGUF](htt
 StoaPneuma Notes is an experimental iPhone app. It records a session, transcribes it live, writes a summary you can edit, and then drafts a note in the format you pick (Session, SOAP, DAP, BIRP or your own templates). All of it runs on the phone with a local AI model: no cloud transcription, no server, no account.
 
 <p align="center">
-  <img src="docs/screenshots/schedule.png" width="220" alt="Schedule screen with today's sessions" />
-  <img src="docs/screenshots/session-recording.png" width="220" alt="Recording a session with a live transcript" />
-  <img src="docs/screenshots/client.png" width="220" alt="Client page with description and goals" />
+  <img src="docs/screenshots/light-schedule.webp" width="220" alt="Schedule screen with today's sessions" />
+  <img src="docs/screenshots/light-recording.webp" width="220" alt="Recording a session" />
+  <img src="docs/screenshots/light-client.webp" width="220" alt="Client page with description and goals" />
 </p>
 
 ## Features
@@ -65,7 +65,7 @@ StoaPneuma Notes is an experimental iPhone app. It records a session, transcribe
 - **Unassigned sessions**: start recording before choosing a client; assign any time from the client chip, or when saving. Saving offers the calendar appointment the recording overlaps.
 - **Automatic calendar entries**: any session with a client that isn't on the calendar gets linked to that client's overlapping appointment or a back-dated one (length corrected when you stop recording).
 
-**Prompt engine** (Settings → Prompts)
+**Prompt engine** (Settings → Prompt engine)
 - Note templates you can create, rename, hide, reorder and delete (built-ins: Session note, SOAP, DAP, BIRP).
 - Global rules added to every prompt (e.g. "Refer to the client only as Client"), each with an on/off switch, plus rules for a single prompt.
 - **See full prompt** shows exactly what the model receives.
@@ -78,21 +78,17 @@ StoaPneuma Notes is an experimental iPhone app. It records a session, transcribe
 
 ## Screenshots
 
-| Schedule | Clients | Client |
-|---|---|---|
-| <img src="docs/screenshots/schedule.png" width="230" alt="Schedule" /> | <img src="docs/screenshots/clients.png" width="230" alt="Clients" /> | <img src="docs/screenshots/client.png" width="230" alt="Client" /> |
+**Light**
 
-| Session ready (dark) | Recording | New appointment |
-|---|---|---|
-| <img src="docs/screenshots/session-ready-dark.png" width="230" alt="Session ready, dark mode" /> | <img src="docs/screenshots/session-recording.png" width="230" alt="Recording" /> | <img src="docs/screenshots/appointment.png" width="230" alt="New appointment" /> |
+| Schedule | Recording | Client | About | Settings |
+|---|---|---|---|---|
+| <img src="docs/screenshots/light-schedule.webp" width="160" alt="Schedule, light mode" /> | <img src="docs/screenshots/light-recording.webp" width="160" alt="Recording, light mode" /> | <img src="docs/screenshots/light-client.webp" width="160" alt="Client, light mode" /> | <img src="docs/screenshots/light-about.webp" width="160" alt="About, light mode" /> | <img src="docs/screenshots/light-settings.webp" width="160" alt="Settings, light mode" /> |
 
-| Prompts hub (dark) | Prompt editor (dark) | Settings |
-|---|---|---|
-| <img src="docs/screenshots/prompts-hub-dark.png" width="230" alt="Prompts hub" /> | <img src="docs/screenshots/prompt-editor-dark.png" width="230" alt="Prompt editor" /> | <img src="docs/screenshots/settings.png" width="230" alt="Settings" /> |
+**Dark**
 
-| Clients (dark) |
-|---|
-| <img src="docs/screenshots/clients-dark.png" width="230" alt="Clients, dark mode" /> |
+| Schedule | Recording | Clients | Note template | Settings |
+|---|---|---|---|---|
+| <img src="docs/screenshots/dark-schedule.webp" width="160" alt="Schedule, dark mode" /> | <img src="docs/screenshots/dark-recording.webp" width="160" alt="Recording, dark mode" /> | <img src="docs/screenshots/dark-clients.webp" width="160" alt="Clients, dark mode" /> | <img src="docs/screenshots/dark-template.webp" width="160" alt="Note template, dark mode" /> | <img src="docs/screenshots/dark-settings.webp" width="160" alt="Settings, dark mode" /> |
 
 ## How it works
 
